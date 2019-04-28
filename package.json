@@ -36,7 +36,7 @@
 		}
 	},
 	"publishConfig": {
-		"access": "private"
+		"access": "restricted"
 	},
 	"files": [
 		"build.xml",
