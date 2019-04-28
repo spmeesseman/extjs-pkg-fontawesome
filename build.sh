@@ -5,8 +5,11 @@ cd "$(dirname ${BASH_SOURCE[0]})"
 FADIR=node_modules/@fortawesome/fontawesome-pro
 
 if [ ! -d $FADIR/scss ]; then
-    echo Font Awesome files not found!!
-    exit
+    FADIR=node_modules/@fortawesome/fontawesome-free
+    if [ ! -d $FADIR/scss ]; then
+        echo Font Awesome files not found!!
+        exit
+    fi
 fi
 
 if [ ! -d resources/webfonts ]; then

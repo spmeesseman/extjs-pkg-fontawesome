@@ -5,8 +5,11 @@ cd %~dp0
 set FADIR=node_modules\@fortawesome\fontawesome-pro
 
 if not exist %FADIR%\scss  (
-    echo Zip not found!!
-    exit
+    set FADIR=node_modules\@fortawesome\fontawesome-free
+    if not exist %FADIR%\scss  (
+        echo Font Awesome files not found!!
+        exit
+    )
 )
 
 mkdir resources
