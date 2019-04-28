@@ -5,13 +5,13 @@
 	"publisher": "spmeesseman",
 	"version": "1.0.1",
 	"license": "MIT",
-	"homepage": "https://github.com/spmeesseman/extjs-pkg-fontawesome-pro/blob/master/README.md",
+	"homepage": "https://github.com/spmeesseman/extjs-pkg-fontawesome/blob/master/README.md",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/spmeesseman/extjs-pkg-fontawesome-pro.git"
+		"url": "https://github.com/spmeesseman/extjs-pkg-fontawesome.git"
 	},
 	"bugs": {
-		"url": "https://github.com/spmeesseman/extjs-pkg-fontawesome-pro/issues"
+		"url": "https://github.com/spmeesseman/extjs-pkg-fontawesome/issues"
 	},
 	"devDependencies": {
 		"@fortawesome/fontawesome-free": "^5.8.1",
