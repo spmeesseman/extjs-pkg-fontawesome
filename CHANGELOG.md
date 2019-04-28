@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.2](https://github.com/spmeesseman/extjs-pkg-fontawesome/compare/v1.0.1...v1.0.2) (2019-04-28)
+
+
+### Code Refactoring
+
+* another try to change build to private ([de43185](https://github.com/spmeesseman/extjs-pkg-fontawesome/commit/de43185))
+
 ## [1.0.1](https://github.com/spmeesseman/extjs-pkg-fontawesome/compare/v1.0.0...v1.0.1) (2019-04-28)
 
 
