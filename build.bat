@@ -2,14 +2,16 @@
 @echo off
 cd %~dp0
 
-set FADIR=node_modules\@fortawesome\fontawesome-pro
+set FADIR_PRO=node_modules\@fortawesome\fontawesome-pro
+set FADIR_FREE=node_modules\@fortawesome\fontawesome-free
+set FADIR=%FADIR_PRO%
 
-if not exist %FADIR%\scss  (
-    set FADIR=node_modules\@fortawesome\fontawesome-free
-    if not exist %FADIR%\scss  (
+if not exist %FADIR_PRO%\scss  (
+    if not exist %FADIR_FREE%\scss  (
         echo Font Awesome files not found!!
         exit
     )
+    set FADIR=%FADIR_FREE%
 )
 
 mkdir resources

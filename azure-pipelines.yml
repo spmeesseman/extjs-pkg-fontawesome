@@ -38,9 +38,6 @@ jobs:
         displayName: 'Install dependencies'
         inputs:
           verbose: false
-        env:
-          ${NPM_TOKEN}: $(npmToken)
-          ${NPM_FONTAWESOME_TOKEN}: $(npmFontAwesomeToken)
       - task: Npm@1
         displayName: 'Build release files'
         inputs:
@@ -65,9 +62,6 @@ jobs:
         displayName: 'Install dependencies'
         inputs:
           verbose: false
-        env:
-          ${NPM_TOKEN}: $(npmToken)
-          ${NPM_FONTAWESOME_TOKEN}: $(npmFontAwesomeToken)
       - task: Npm@1
         displayName: 'Build release files'
         inputs:
