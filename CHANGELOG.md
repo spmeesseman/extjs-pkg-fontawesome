@@ -1,5 +1,18 @@
 # Change Log
 
+## [1.0.1](https://github.com/spmeesseman/extjs-pkg-fontawesome/compare/v1.0.0...v1.0.1) (2019-04-28)
+
+
+### Build System
+
+* fall back to free fontawesome if pro was not  downloaded [skip ci] ([ac50ddf](https://github.com/spmeesseman/extjs-pkg-fontawesome/commit/ac50ddf))
+* removed all reference to "pro" ([bb7f7b2](https://github.com/spmeesseman/extjs-pkg-fontawesome/commit/bb7f7b2))
+
+
+### Code Refactoring
+
+* build is private ([9aca63c](https://github.com/spmeesseman/extjs-pkg-fontawesome/commit/9aca63c))
+
 # 1.0.0 (2019-04-28)
 
 
