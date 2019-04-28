@@ -1,0 +1,94 @@
+{
+	"name": "@spmeesseman/extjs-pkg-fontawesome-pro",
+	"displayName": "ExtJs Font Awesome Package",
+	"description": "ExtJS Font Awesome Package",
+	"publisher": "spmeesseman",
+	"version": "1.0.1",
+	"license": "MIT",
+	"homepage": "https://github.com/spmeesseman/extjs-pkg-fontawesome-pro/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/spmeesseman/extjs-pkg-fontawesome-pro.git"
+	},
+	"bugs": {
+		"url": "https://github.com/spmeesseman/extjs-pkg-fontawesome-pro/issues"
+	},
+	"devDependencies": {
+		"@fortawesome/fontawesome-free": "^5.8.1",
+		"@fortawesome/fontawesome-pro": "^5.8.1",
+		"@semantic-release/changelog": "^3.0.2",
+		"@semantic-release/git": "^7.0.8",
+		"commitizen": "^3.0.7",
+		"conventional-changelog-spm": "^1.1.3",
+		"cz-conventional-changelog": "^2.1.0",
+		"semantic-release": "^15.13.3"
+	},
+	"scripts": {
+		"build": "build.bat",
+		"build-extjs-pkg": "npx sencha package build",
+		"repo-release": "npx sencha package add build\\fontawesome-pro\\fontawesome-pro.pkg",
+		"semantic-release": "semantic-release --no-ci",
+		"semantic-release-dry": "semantic-release --dry-run"
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	},
+	"publishConfig": { 
+        "access": "public" 
+    },
+	"files": [
+		"build.xml",
+		"sass",
+		"resources"
+	],
+	"sencha": {
+		"name": "font-awesome-pro",
+		"namespace": "Ext",
+		"type": "code",
+		"creator": "spmeesseman",
+		"summary": "Package wrapper for Font Awesome",
+		"detailedDescription": "Package wrapper for Font Awesome",
+		"version": "5.5.0",
+		"compatVersion": "5.1.0",
+		"format": "1",
+		"slicer": null,
+		"output": "${framework.dir}/build/packages/${package.name}",
+		"local": true,
+		"resource": {
+			"paths": ""
+		},
+		"resources": [
+			{
+				"path": "${package.dir}/resources",
+				"output": "shared"
+			}
+		],
+		"sass": {
+			"namespace": "Ext",
+			"etc": [
+				"${package.dir}/sass/etc"
+			],
+			"var": [
+				"${package.dir}/sass/var"
+			],
+			"src": [
+				"${package.dir}/sass/src",
+				"${package.dir}/sass/src/main.scss"
+			]
+		},
+		"classpath": [
+			"${package.dir}/src"
+		],
+		"overrides": [
+			"${package.dir}/overrides"
+		],
+		"requires": [
+			"core"
+		],
+		"ignore": [
+			"(^|/)CVS(/?$|/.*?$)"
+		]
+	}
+}

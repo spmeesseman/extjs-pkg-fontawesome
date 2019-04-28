@@ -1,0 +1,85 @@
+
+//
+//
+// Imports:
+//
+// Import the base font awesome scss file 'fontawesome.css' and import one or more style 
+// packages.  Style packages are:
+//
+//     ../etc/fa-brands.scss
+//     ../etc/fa-light.scss
+//     ../etc/fa-regular.scss
+//     ../etc/fa-solid.scss
+//
+
+@import "../etc/fontawesome.scss";
+@import "../etc/brands.scss";
+@import "../etc/light.scss";
+@import "../etc/regular.scss";
+@import "../etc/solid.scss";
+
+
+//
+// Legacy 'FontAwesome' font family support
+//
+// To support the legacy ExtJS 'FontAwesome' font family, we include the font name here,
+// and just make it reference one of the three 5.1 font types.
+//
+// Below the font referencesd the 'Regular' font type.
+//
+// The parameters can be updated for Light, Regular, Solid below using the parameters found
+// in the respective scss files:
+//
+//     fa-light.scss
+//     fa-solid.scss
+//     fa-regular.scss
+//
+// Only one of the following font-face groups should be left uncommented.  All references to
+// the legacy font package ny internal ExtJS themes will be redirected to this icon set.
+//
+
+//
+// Regular
+//
+@font-face {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: 400;
+  src: url('#{$fa-font-path}/fa-regular-400.eot');
+  src: url('#{$fa-font-path}/fa-regular-400.eot?#iefix') format('embedded-opentype'),
+  url('#{$fa-font-path}/fa-regular-400.woff2') format('woff2'),
+  url('#{$fa-font-path}/fa-regular-400.woff') format('woff'),
+  url('#{$fa-font-path}/fa-regular-400.ttf') format('truetype'),
+  url('#{$fa-font-path}/fa-regular-400.svg#fontawesome') format('svg');
+}
+
+//
+// Light
+//
+//@font-face {
+//  font-family: 'FontAwesome';
+//  font-style: normal;
+//  font-weight: 300;
+//  src: url('#{$fa-font-path}/fa-light-300.eot');
+//  src: url('#{$fa-font-path}/fa-light-300.eot?#iefix') format('embedded-opentype'),
+//  url('#{$fa-font-path}/fa-light-300.woff2') format('woff2'),
+//  url('#{$fa-font-path}/fa-light-300.woff') format('woff'),
+//  url('#{$fa-font-path}/fa-light-300.ttf') format('truetype'),
+//  url('#{$fa-font-path}/fa-light-300.svg#fontawesome') format('svg');
+//}
+
+//
+// Solid
+//
+//@font-face {
+//  font-family: 'FontAwesome';
+//  font-style: normal;
+//  font-weight: 900;
+//  src: url('#{$fa-font-path}/fa-solid-900.eot');
+//  src: url('#{$fa-font-path}/fa-solid-900.eot?#iefix') format('embedded-opentype'),
+//  url('#{$fa-font-path}/fa-solid-900.woff2') format('woff2'),
+//  url('#{$fa-font-path}/fa-solid-900.woff') format('woff'),
+//  url('#{$fa-font-path}/fa-solid-900.ttf') format('truetype'),
+//  url('#{$fa-font-path}/fa-solid-900.svg#fontawesome') format('svg');
+//}
+
