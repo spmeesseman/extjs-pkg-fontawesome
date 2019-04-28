@@ -1,5 +1,17 @@
 # Change Log
 
+## [1.0.3](https://github.com/spmeesseman/extjs-pkg-fontawesome/compare/v1.0.2...v1.0.3) (2019-04-28)
+
+
+### Bug Fixes
+
+* test force release attempt dep install of fa free package in ci ([c592a70](https://github.com/spmeesseman/extjs-pkg-fontawesome/commit/c592a70))
+
+
+### Code Refactoring
+
+* remove import of "light" icon set not included with free fa package ([f0142e2](https://github.com/spmeesseman/extjs-pkg-fontawesome/commit/f0142e2))
+
 ## [1.0.2](https://github.com/spmeesseman/extjs-pkg-fontawesome/compare/v1.0.1...v1.0.2) (2019-04-28)
 
 
