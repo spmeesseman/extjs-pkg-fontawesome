@@ -26,7 +26,7 @@
 	"scripts": {
 		"build": "build.bat",
 		"build-extjs-pkg": "npx sencha package build",
-		"repo-release": "npx sencha package add build\\fontawesome-pro\\fontawesome-pro.pkg",
+		"repo-release": "npx sencha package add build\\fontawesome\\fontawesome.pkg",
 		"semantic-release": "semantic-release --no-ci",
 		"semantic-release-dry": "semantic-release --dry-run"
 	},
@@ -36,7 +36,7 @@
 		}
 	},
 	"publishConfig": {
-		"access": "public"
+		"access": "private"
 	},
 	"files": [
 		"build.xml",
@@ -44,13 +44,13 @@
 		"resources"
 	],
 	"sencha": {
-		"name": "font-awesome-pro",
+		"name": "fontawesome",
 		"namespace": "Ext",
 		"type": "code",
 		"creator": "spmeesseman",
 		"summary": "Package wrapper for Font Awesome",
 		"detailedDescription": "Package wrapper for Font Awesome",
-		"version": "5.5.0",
+		"version": "5.8.1",
 		"compatVersion": "5.1.0",
 		"format": "1",
 		"slicer": null,
