@@ -3,7 +3,7 @@
 	"displayName": "ExtJs Font Awesome Package",
 	"description": "ExtJS Font Awesome Package",
 	"publisher": "spmeesseman",
-	"version": "1.0.1",
+	"version": "1.0.0",
 	"license": "MIT",
 	"homepage": "https://github.com/spmeesseman/extjs-pkg-fontawesome/blob/master/README.md",
 	"repository": {
@@ -35,9 +35,9 @@
 			"path": "cz-conventional-changelog"
 		}
 	},
-	"publishConfig": { 
-        "access": "public" 
-    },
+	"publishConfig": {
+		"access": "public"
+	},
 	"files": [
 		"build.xml",
 		"sass",
