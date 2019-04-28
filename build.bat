@@ -23,8 +23,8 @@ set LF=^
 
 
 cscript //B script\substitute.vbs "@return unquote('\'#{ $fa-var }\'');" "@return $fa-var;" sass\etc\_variables.scss > sass\etc\_variables.scss.1
-cscript //B script\substitute.vbs "'../webfonts' ^!default" "'../../resources/font-awesome-pro/webfonts'" sass\etc\_variables.scss.1 > sass\etc\_variables.scss
-cscript //B script\substitute.vbs "font-awesome-${FontAwesomeVersion}/webfonts" "font-awesome-pro/webfonts" sass\etc\_variables.scss > sass\etc\_variables.scss.1
+cscript //B script\substitute.vbs "'../webfonts' ^!default" "'../../resources/fontawesome/webfonts'" sass\etc\_variables.scss.1 > sass\etc\_variables.scss
+cscript //B script\substitute.vbs "font-awesome-${FontAwesomeVersion}/webfonts" "fontawesome/webfonts" sass\etc\_variables.scss > sass\etc\_variables.scss.1
 cscript //B script\substitute.vbs $fa-font-path: "@import 'v4variables';!LF!!LF!$fa-font-path:" sass\etc\_variables.scss.1 > sass\etc\_variables.scss
 cscript //B script\substitute.vbs " \f" " '\f" sass\etc\_variables.scss > sass\etc\_variables.scss.1
 cscript //B script\substitute.vbs "0;" "0';" sass\etc\_variables.scss.1 > sass\etc\_variables.scss

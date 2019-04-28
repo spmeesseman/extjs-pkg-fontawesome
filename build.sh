@@ -19,8 +19,8 @@ cp -f $FADIR/webfonts/*.* resources/webfonts
 cp -f $FADIR/scss/*.* sass/etc
 
 sed -i 's/@return unquote("\\"#{ $fa-var }\\"");/@return $fa-var;/g' sass/etc/_variables.scss
-sed -i 's/"..\/webfonts" !default/"..\/..\/resources\/font-awesome-pro\/webfonts"/g' sass/etc/_variables.scss
-sed -i 's/font-awesome-$FA_VERSION\/webfonts/font-awesome-pro\/webfonts/g' sass/etc/_variables.scss
+sed -i 's/"..\/webfonts" !default/"..\/..\/resources\/fontawesome\/webfonts"/g' sass/etc/_variables.scss
+sed -i 's/font-awesome-$FA_VERSION\/webfonts/fontawesome\/webfonts/g' sass/etc/_variables.scss
 sed -i 's/$fa-font-path:/@import "v4variables";\r\n\r\n$fa-font-path:/g' sass/etc/_variables.scss
 sed -i 's/ \\f/ "\\f/g' sass/etc/_variables.scss
 sed -i 's/0;/0";/g' sass/etc/_variables.scss

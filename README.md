@@ -8,7 +8,7 @@
 
 ## Description
 
-> This package provides an ExtJS package wrapper for the Font Awesome icon set.
+> This package provides an ExtJS package wrapper for the Font Awesome icon set.  The build is set to use the pro version, you must be a paid customer.  If pro version cannot be downloaded, then the free version is used when built.
 
 ## Install
 
@@ -21,7 +21,7 @@ To install this package, run the following command:
 To include the package in an ExtJS application build, be sure to add the package name to the list of required packages in the app.json file:
 
     "requires": [
-         "fontawesome-pro",
+         "fontawesome",
         ...
     ]
 
@@ -31,12 +31,12 @@ For an open tooling build, also add the node_modules path to the workspace.json 
         "dir": "...${package.dir}/node_modules/extjs-pkg-fontawesome"
     }
 
-Simply include the control into any class file:
+Simply use the icons with the default ExtJS syntax:
 
-    require: [ 'Ext.fontawesome-pro.TinyMceEditor' ],
     items: [
     {
-        xtype: 'fontawesome-proeditor'
+        xtype: 'panel',
+        iconCls: 'far fa-plus'
     }]
 
 ## Feedback & Contributing
@@ -47,7 +47,7 @@ Simply include the control into any class file:
   [pull requests](https://github.com/spmeesseman/extjs-pkg-fontawesome/pulls)
 * [Contributors](https://github.com/spmeesseman/extjs-pkg-fontawesome/graphs/contributors)
 
-## Build Notes
+## Build Notes (old / need to edit)
 
 To use package with ExtJS, some finagling of both some framework files and the original
 FontAwesome package was necessary.
@@ -64,7 +64,7 @@ definitions override the legacy definitions).  Note the original import of the l
 needs to remain so that default references embdeed within the base themes will have a valid
 reference:
 
-    @import "../../../packages/remote/font-awesome-pro/sass/etc/_variables.scss";
+    @import "../../../packages/remote/fontawesome/sass/etc/_variables.scss";
 
 If using the Triton classic toolkit theme, the following file needs to be modified to remove
 the legacy package dependency:
