@@ -2,7 +2,7 @@
 	"name": "@spmeesseman/extjs-pkg-fontawesome",
 	"displayName": "ExtJs Font Awesome Package",
 	"description": "ExtJS Font Awesome Package",
-	"publisher": "spmeesseman",
+	"author": "spmeesseman",
 	"version": "1.0.3",
 	"license": "MIT",
 	"homepage": "https://github.com/spmeesseman/extjs-pkg-fontawesome/blob/master/README.md",
